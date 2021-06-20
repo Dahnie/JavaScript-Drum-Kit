@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&display=swap");
+
+body {
+  width: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: rgb(88, 47, 50);
+  background-image: url("Images/john-matychuk-gUK3lA3K7Yo-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+  @media (min-width: 1025px) {
+    background-size: 60% 100%;
+    background-position: center top;
+  }
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -150%);
+}
+
+.keys {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+.key {
+  margin-right: 10px;
+}
+
+.btn {
+  width: 68px;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: rgb(209, 189, 189);
+  filter: blur(0.4px);
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-family: "Noto Sans JP", sans-serif;
+  border-radius: 10px;
+  outline: none;
+  border-color: rgb(0, 0, 0);
+  border-width: 2.5px;
+  transition: all; /* Time for transition was set in the timeout in the DOM */
+}
+
+kbd {
+  font-size: 30px;
+  color: #3a0909;
+}
+
+.playing {
+  border-color: rgb(182, 103, 0);
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgb(112, 32, 32);
+}
